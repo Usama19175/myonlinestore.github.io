@@ -1,0 +1,370 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+/* :root{
+              --navbar-height:59px
+} */
+/* CSS on Navbar */
+#navbar{
+         display: flex;
+         align-items: center;
+         position: relative;
+         
+}
+}
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    margin: 3px 25px;
+    height: 100px;
+}
+#navbar ul{
+        display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color:gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .55;
+}
+
+#navbar ul li{
+             list-style: none;
+             font-size: 1.3rem;
+             transition: all .5s ease-in-out  ;
+} 
+#navbar ul li:hover{
+    color: black;
+    background-color: rgb(114, 23, 23);
+    /* text-shadow:23px 50px yellow; */
+    transform: translate(10px, 10px);
+    border-radius: 40px;
+    height: 100px;
+    width:100px;
+    /* text-shadow: rgb(173, 11, 11); */
+    justify-content: center;
+    align-items: center;
+
+}
+#navbar ul li a{
+    list-style: none;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0px 18px;
+    color: white;
+    transition: all .5s ease-in-out  ;
+    
+} 
+/* #navbar ul li a:hover{
+    color: black;
+    background-color: wheat;
+    text-shadow:23px 50px yellow;
+    transform: translate(5px, 5px);
+    border-radius: 20px;
+    height: 5px;
+    width: 5px;px;
+    text-shadow: rgb(6, 31, 65);
+} */
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 571px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+   
+}
+#home::before{
+    content: "";
+    background-image: url(pexels-mario-cuadros-2413089.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 600%;
+    width: 140%;
+    z-index: -2;
+    opacity: .4;
+}
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+#home h1{
+    color: rgb(189, 131, 24);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Pacifico', cursive
+}
+#home p{
+    color: rgb(6, 56, 63);
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Anonymous Pro', monospace
+}
+.btn{
+    padding: 8px 10px;
+    color: rgb(17, 16, 16);
+    border: 2px solid rgb(243, 241, 241);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px 15px;
+    font-size: .9rem;
+    opacity: .8;
+    cursor: pointer; 
+    transition: all .5s ease-in-out  ;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(5, 31, 56);
+    /* text-shadow:23px 50px yellow; */
+    transform: translate(10px, 10px);
+    border-radius: 40px;
+    height: 100px;
+    width:100px;
+    /* text-shadow: rgb(173, 11, 11); */
+    justify-content: center;
+    align-items: center;
+
+}
+/* Services section */
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    /* border: 2px solid brown; */
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 733px;
+    width: 503px;
+    background-image: url(https://i.pinimg.com/564x/c7/6e/02/c76e028301ce20ca27b861e6424e1267.jpg);
+    z-index: -1.5;
+    color: white;
+    opacity: .8;
+    box-shadow: 10px 10px 15px rgb(19, 120, 179);
+    font-family: cursive;
+    
+}
+#services .box img{
+    height: 15%;
+    width: 15%;
+    display: block;
+    margin: auto;
+    filter: invert(100);
+}
+#highlight{
+    display: flex;
+    margin: 40px 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Beth Ellen', cursive;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.box{
+    display: block;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+/* football kit  */
+.footballkits img{
+    /* filter: invert(100); */
+    height: 80px;
+    width: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    /* margin: auto; */
+    margin: auto;
+}
+#services  .footballkits{
+    background-image: url(wallpaperflare-cropped-_1_.jpg);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 733px;
+    width: 480px;
+    /* background-image: url(https://i.pinimg.com/564x/c7/6e/02/c76e028301ce20ca27b861e6424e1267.jpg); */
+    z-index: -1.6;
+    color: rgb(255, 255, 255); 
+    box-shadow: 10px 10px 15px rgb(121, 65, 65);
+    font-family: cursive;
+    font-weight: bold;
+    opacity: .75;
+    
+}
+#services  .footballkits  h2{
+    font-weight:900;
+    /* font-style: italic; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* padding: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services  .footballkits  p{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin: auto; */
+    padding: 15px;
+}
+/* .footballkits */
+#services  .football{
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 733px;
+    width: 480px;
+    background-image: url(https://i.pinimg.com/564x/c7/6e/02/c76e028301ce20ca27b861e6424e1267.jpg);
+    z-index: -1.6;
+    color: rgb(241, 240, 240); 
+    box-shadow: 10px 10px 15px rgb(121, 65, 65);
+    font-family: cursive;
+    font-weight: bold;
+    opacity: .9;
+}
+#services  .football img{
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    /* margin: auto; */
+    margin: 10px 180px;
+}
+  .football  h2{
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    /* font-style: italic; */
+}
+ #services .football{
+    background-image: url(footballs.jpg);
+    /* background-position: center; */
+    z-index: -1.5;
+    opacity: .7;
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
+    padding: 15px;
+    height: 715px;
+    width: 450px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px rgb(174, 202, 70);
+    /* background-clip:padding-box */
+    /* color: transparent; */
+    color: rgb(236, 247, 247);
+    
+
+    
+}
+ .football p{
+    font-weight: bolder;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+/* clients */
+#clients img{
+    height: 120px;
+    width: 120px;
+    margin: 5px 50px;
+}
+#clientsection h1{
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Vujahday Script', cursive;
+}
+#clients{
+    display: flex;
+    margin: 20px 40px;
+}
+#clients .adidas img{
+    height: 100px;
+}
+#clients .nike img{
+    /* margin: 40px 50px; */
+    height: 80px;
+    width: 160px;
+    /* margin: 0px 60px; */
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    /* margin: 0px 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+/* contactbox */
+#contactbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin: 40px 50px;
+    /* width: 10%; */
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+}
+#contactbox form{
+    /* font-size: 1.1rem; */
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contactbox label{
+    width: 50%;
+    font-size: 1.1rem;
+    font-family: 'Akaya Telivigala', cursive;
+}
+#contact::before{
+    /* background-image: url(contacts.jpg); */
+    background-position:bottom;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}   
+#contact h1{
+font-family: 'Vujahday Script', cursive;
+font-size: 50px;
+display: flex;
+margin: auto;
+align-items: center;
+justify-content: center;
+}
